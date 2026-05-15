@@ -1,0 +1,10 @@
+{
+  "private": true,
+  "workspaces": [
+    "she-helping-hand"
+  ],
+  "scripts": {
+    "build": "npm --prefix ./she-helping-hand run build && rm -rf dist && cp -R she-helping-hand/dist dist",
+    "vercel-build": "npm run build"
+  }
+}
